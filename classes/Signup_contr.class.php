@@ -21,27 +21,27 @@ class Signup_contr extends Signup {
     public function signup_user(){
         if($this->empty_input()    == false){
             //echo error input
-            header("location: ../pages/index1.php?error = one or multiple inputs are empty");
+            header("location: ..index.php?error = one or multiple inputs are empty");
             exit();
         }
         if($this->invalid_name()   == false){
             //echo invalid user first or lastname
-            header("location: ../pages/index1.php?error = names should be alpha-numeric");
+            header("location: ..index.php?error = names should be alpha-numeric");
             exit();
         }
         if($this->invalid_email()  == false){
             //echo invalid email
-            header("location: ../pages/index1.php?error = invalid mail");
+            header("location: ..index.php?error = invalid mail");
             exit();
         }
         if($this->invalid_repass() == false){
             //echo invalid re-password
-            header("location: ../pages/index1.php?error = passwords don't match");
+            header("location: ..index.php?error = passwords don't match");
             exit();
         }
         if($this->already_exists() == true){
             //echo invalid user first or lastname
-            header("location: ../pages/index1.php?error = name or email is already taken");
+            header("location: ..index.php?error = name or email is already taken");
             exit();
         }
         $this->set_user($this->fname, $this->lname, $this->email, $this->pass);

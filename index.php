@@ -9,7 +9,7 @@ session_start();
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign_up</title>
-    <link rel="stylesheet" href="../stylesheets/style.css">
+    <link rel="stylesheet" href="stylesheets/style.css">
 </head>
 
 <body>
@@ -27,7 +27,7 @@ session_start();
         <div class="card-title">
             <h1>SIGN UP</h1>
         </div>
-        <form class="form1" action="../include/signup.inc.php" method="POST">
+        <form class="form1" action="include/signup.inc.php" method="POST">
             <div class="form1-fields">
                 <input type="text" id="fname" name="fname" placeholder="first name..">
                 <input type="text" id="lname" name="lname" placeholder="last name..">
