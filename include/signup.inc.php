@@ -9,17 +9,15 @@ if(isset($_POST['signup'])){
     $repass = $_POST['repass'];
     $check  = $_POST['check'];
 
-    // print_r([$fname,$lname,$email,$pass,$repass]);
-    //instantiating signup_contr class
     include "../classes/Dbh.class.php";
     include "../classes/Signup.class.php";
     include "../classes/Signup_contr.class.php";
+
     $Signup = new Signup_contr($fname,$lname,$email,$pass,$repass,$check);
-    //Running Error handlers and user signup
     $Signup->signup_user();
-    // echo 'hello';
-    // going  to login page
-    header("location: ../pages/login.php");
+    echo "hello";
+
+    // header("location: ../pages/login.php");
 }else{
     echo "<br> signup is not pressed";
 }

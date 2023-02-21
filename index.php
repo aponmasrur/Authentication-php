@@ -26,7 +26,7 @@ session_start();
     <div class="card">
         <div class="card-title">
             <h1>SIGN UP</h1>
-        </div>
+    </div>
         <form class="form1" action="include/signup.inc.php" method="POST">
             <div class="form1-fields">
                 <input type="text" id="fname" name="fname" placeholder="first name..">
@@ -47,7 +47,7 @@ session_start();
             </div>
         </form>
         <div class="card-member">
-            already a memeber? <a href="login.php">login instead</a>
+            already a memeber? <a href="pages/login.php">login instead</a>
         </div>
 
     </div>

@@ -6,7 +6,7 @@ class Signup extends Dbh {
     public function check_user($fname, $email){
         $stmt = $this->connect()->prepare('SELECT user_id,fname FROM users WHERE fname = ? OR email = ?;');
         if(!$stmt->execute([$fname,$email])){
-            header("location: ..index.php?error=query failed on user already exist");
+            header("location: ../index.php?error=query failed on user already exist");
             exit();
         }else{
             $stmt->setFetchMode(PDO::FETCH_ASSOC);
@@ -45,7 +45,7 @@ class Signup extends Dbh {
         if(!$stmt->execute([$user_id,$fname, $lname, $email, $pass])){
             // $stmt = null;
             echo "query could not be executed <br>";
-            header("location: ..index.php?error=query failed on set_user");
+            header("location: ../index.php?error=query failed on set_user");
             exit();
         }else{
             //echo "query executed successfully <br>";
