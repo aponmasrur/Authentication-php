@@ -27,7 +27,7 @@ class Login_contr extends Login {
             exit();
         }
         if($this->invalid_pass() == false){
-            //echo email not registered
+            //echo password is incorrect
             header("location: ../pages/login.php?error = password is incorrect");
             exit();
         }
@@ -72,8 +72,8 @@ class Login_contr extends Login {
     }
 }
 
-$apple = new Login_contr('bilu@gmail.com','hia212');
-$b = $apple->login_user();
+// $apple = new Login_contr('bilu@gmail.com','hia212');
+// $b = $apple->login_user();
 // if($b){
 //     // $a->log_user('bilu@gmail.com');
 //     echo $b."login success".".<br>";

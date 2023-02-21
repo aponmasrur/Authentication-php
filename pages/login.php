@@ -39,7 +39,7 @@
             forgot password? <a href="page_not_found.php">click to reset</a>
         </div>
         <div class="card-member">
-            not a member? sign up instead <a href="/study/basic_login_project/">Sign Up</a>
+            not a member? sign up instead <a href="../">Sign Up</a>
         </div>
     </div>
 </body>
